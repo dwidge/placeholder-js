@@ -36,7 +36,6 @@ const defaultTransformations: Transformations = {
   date: (value: any): string => {
     let date: Date;
     try {
-      console.log("date1", { value });
       if (value === "" || value == null) return "";
       if (typeof value === "number") {
         // If the value is less than 1e11, assume it's in seconds.
